@@ -27,3 +27,7 @@ Di sana ada file binary-nya.
 <p align="center">
 	<img src="./.md_asset/ss-1.png" />
 </p>
+
+## Link untuk Traktir
+
+- https://karyakarsa.com/rakifsul
