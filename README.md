@@ -14,11 +14,11 @@ The application can create executables for both Windows and Linux operating syst
 
 However, it can only run on Windows, and has only been tested on Windows 11.
 
-## Download di Mana
+## Where to Download
 
 Download the executables on "Releases" page.
 
-## Cara Penggunaan
+## How to Use
 
 You can find the executable binaries in "dist" folder.
 
