@@ -30,4 +30,4 @@ Di sana ada file binary-nya.
 
 ## Link untuk Traktir
 
-- https://karyakarsa.com/rakifsul
+- https://karyakarsa.com/rakifsul/info
