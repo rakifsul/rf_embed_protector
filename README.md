@@ -29,3 +29,7 @@ Once found, run the .exe file.
 <p align="center">
 	<img src="./.md_asset/ss_2024.07.10-0244.png" />
 </p>
+
+## Link untuk Traktir
+
+- https://karyakarsa.com/rakifsul/info
