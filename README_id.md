@@ -16,6 +16,10 @@ Hanya saja, aplikasi ini hanya dapat dijalankan di Windows, dan hanya telah teru
 
 Download executable dari aplikasi ini di halaman "Releases".
 
+## Di Mana Source Code-nya
+
+Source code ada di dalam paket zip bersama executable-nya.
+
 ## Cara Penggunaan
 
 Untuk menjalankan aplikasi ini, buka folder "dist".

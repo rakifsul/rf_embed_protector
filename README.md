@@ -18,6 +18,10 @@ However, it can only run on Windows, and has only been tested on Windows 11.
 
 Download the executables on "Releases" page.
 
+## Where are the Source Codes
+
+Source codes are included in the zip along with the executables.
+
 ## How to Use
 
 You can find the executable binaries in "dist" folder.
