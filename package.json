@@ -1,0 +1,51 @@
+{
+    "name": "rf_embed_protector",
+    "version": "2024.08.13-0157",
+    "description": "YouTube embed and PDF embed protection.",
+    "author": "RAKIFSUL",
+    "license": "GPL-2.0",
+    "main": "main.mjs",
+    "scripts": {
+        "start": "electron .",
+        "dev": "nodemon --exec electron .",
+        "dist": "electron-builder"
+    },
+    "build": {
+        "buildVersion": "0",
+        "appId": "com.rakifsul.rf_embed_protector",
+        "productName": "RF Embed Protector",
+        "win": {
+            "target": "nsis",
+            "icon": "build/icon/box2-fill.png"
+        },
+        "asar": true,
+        "publish": null,
+        "directories": {
+            "output": "../rf_embed_protector_dist"
+        },
+        "files": [
+            "**/*"
+        ],
+        "extraFiles": [
+            "LICENSE",
+            "NOTICE",
+            "engines/*.*"
+        ]
+    },
+    "devDependencies": {
+        "electron": "^31.1.0",
+        "electron-builder": "^24.13.3",
+        "nodemon": "^3.1.4"
+    },
+    "dependencies": {
+        "concat-files": "^0.1.1",
+        "electron-context-menu": "^4.0.1",
+        "electron-is-dev": "^3.0.1",
+        "electron-store": "^10.0.0",
+        "javascript-obfuscator": "^4.1.1",
+        "jszip": "^3.10.1",
+        "mkdirp": "^3.0.1",
+        "node-tar.gz": "^1.0.0",
+        "unzipper": "^0.12.1"
+    }
+}

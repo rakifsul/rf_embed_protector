@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="../vendor/photon/css/photon.min.css">
+  <link rel="stylesheet" href="renderer.css">
+</head>
+
+<body>
+  <div class="window">
+    <header class="toolbar toolbar-header">
+      <h1 class="title">RF Embed Protector - Protect the Embedded Content</h1>
+    </header>
+    <div class="window-content">
+      <div class="pane-group">
+        <div class="pane-sm sidebar">
+          <nav class="nav-group">
+            <h3 class="nav-group-title">Choose Protector</h3>
+            <span id="menu-youtube" class="nav-group-item" data-pane="pane-youtube">
+              <span class="icon icon-video"></span>
+              YouTube
+            </span>
+            <span id="menu-pdf" class="nav-group-item" data-pane="pane-pdf">
+              <span class="icon icon-doc-text"></span>
+              PDF
+            </span>
+            <h3 class="nav-group-title">Configurations</h3>
+            <span id="menu-settings" class="nav-group-item" data-pane="pane-settings">
+              <span class="icon icon-cog"></span>
+              Settings
+            </span>
+          </nav>
+        </div>
+        <div id="pane" class="pane">
+          <div id="pane-youtube" class="pane-item hidden">
+            <h3>YouTube Protector</h3>
+            <hr />
+            <div>
+              <div class="form-group">
+                <label>Build Name</label>
+                <input id="pane-youtube-tx-build-name" type="text" class="form-control" placeholder="Enter Build Name (cannot empty)" value="MyBuildName">
+              </div>
+
+              <div class="form-group">
+                <label>Youtube URL List</label>
+                <textarea id="pane-youtube-txa-urls" class="form-control" rows="3"></textarea>
+              </div>
+
+              <label>Protection Scheme</label>
+              <select id="pane-youtube-sel-protection-scheme" class="form-control">
+                <option>No Protection</option>
+                <option>Simple Password</option>
+              </select>
+
+              <div style="margin-top: 10px;"></div>
+
+              <div id="pane-youtube-div-simple-password" class="form-group">
+                <label>Simple Password</label>
+                <input id="pane-youtube-tx-simple-password" type="text" class="form-control" placeholder="Enter a password" value="admin">
+              </div>
+
+              <div class="form-actions">
+                <label>Output Folder</label><br>
+                <!-- <input id="pane-youtube-fl-output-folder" type="file" class="form-control"> -->
+                <button id="browse-output-folder-youtube" class="btn btn-form btn-default">Browse</button>
+                <p></p>
+              </div>
+
+              <label>Build For</label>
+              <select id="pane-youtube-sel-build-for" class="form-control">
+                <option>Windows x64</option>
+                <option>Linux x64</option>
+              </select>
+
+              <hr />
+
+              <div class="form-group">
+                <label>Build Progress</label>
+                <progress id="pane-youtube-build-progress" value="0" max="100"></progress>
+              </div>
+
+              <hr />
+
+              <div class="form-actions">
+                <button id="pane-youtube-btn-build" class="btn btn-form btn-default">Build</button>
+              </div>
+            </div>
+          </div>
+
+          <div id="pane-pdf" class="pane-item hidden">
+            <h3>PDF Protector</h3>
+            <hr />
+            <div>
+              <div class="form-group">
+                <label>Build Name</label>
+                <input id="pane-pdf-tx-build-name" type="text" class="form-control" placeholder="Enter Build Name (cannot empty)" value="MyBuildName">
+              </div>
+
+              <!-- <div class="form-group">
+                                <label>PDF File</label>
+                                <input id="pane-pdf-fl-pdf-file" type="file" class="form-control">
+                            </div> -->
+              <div class="form-actions">
+                <label>PDF File</label><br>
+                <button id="browse-file-pdf" class="btn btn-form btn-default">Browse</button>
+                <p></p>
+              </div>
+
+              <label>Protection Scheme</label>
+              <select id="pane-pdf-sel-protection-scheme" class="form-control">
+                <option>No Protection</option>
+                <option>Simple Password</option>
+              </select>
+
+              <div style="margin-top: 10px;"></div>
+
+              <div id="pane-pdf-div-simple-password" class="form-group">
+                <label>Simple Password</label>
+                <input id="pane-pdf-tx-simple-password" type="text" class="form-control" placeholder="Enter a password" value="admin">
+              </div>
+
+              <div class="form-actions">
+                <label>Output Folder</label><br>
+                <!-- <input id="pane-pdf-fl-output-folder" type="file" class="form-control" webkitdirectory> -->
+                <button id="browse-output-folder-pdf" class="btn btn-form btn-default">Browse</button>
+                <p></p>
+              </div>
+
+              <label>Build For</label>
+              <select id="pane-pdf-sel-build-for" class="form-control">
+                <option>Windows x64</option>
+                <option>Linux x64</option>
+              </select>
+
+              <hr />
+
+              <div class="form-group">
+                <label>Build Progress</label>
+                <progress id="pane-pdf-build-progress" value="0" max="100"></progress>
+              </div>
+
+              <hr />
+
+              <div class="form-actions">
+                <button id="pane-pdf-btn-build" class="btn btn-form btn-default">Build</button>
+              </div>
+            </div>
+          </div>
+
+          <div id="pane-settings" class="pane-item hidden">
+            <h3>Settings</h3>
+            <hr />
+            <div>
+              <label>After Build Finished</label>
+              <br />
+              <select id="pane-settings-after-build" class="form-control">
+                <option>Do Nothing</option>
+                <option>Open Output Folder</option>
+              </select>
+              <p></p>
+              <div class="form-actions">
+                <button id="pane-settings-btn-save" class="btn btn-form btn-default">Save</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="toolbar toolbar-footer">
+      <h1 class="title"></h1>
+    </footer>
+  </div>
+
+  <script src="../vendor/jquery/jquery.min.js"></script>
+  <script src="renderer.js"></script>
+</body>
+
+</html>

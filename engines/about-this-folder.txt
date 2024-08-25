@@ -1,0 +1,7 @@
+Download these files, and place them in this folder.
+
+nwjs-v0.45.4-linux-x64.tar.gz:
+https://dl.nwjs.io/v0.45.4/nwjs-v0.45.4-linux-x64.tar.gz
+
+nwjs-v0.45.4-win-x64.zip:
+https://dl.nwjs.io/v0.45.4/nwjs-v0.45.4-win-x64.zip

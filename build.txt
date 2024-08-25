@@ -1,0 +1,5 @@
+cd rf_embed_protector
+
+npm install
+
+npm run dist
