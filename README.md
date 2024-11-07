@@ -3,8 +3,6 @@
 
 # rf_embed_protector - Video Embed and PDF Embed Protection
 
-[README dengan Bahasa Indonesia Klik di Sini](https://github.com/rakifsul/rf_embed_protector/blob/main/README_id.md)
-
 ## Intro
 
 This application is capable of packaging embedded videos or PDFs into an exe file.
