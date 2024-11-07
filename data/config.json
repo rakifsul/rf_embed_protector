@@ -1,0 +1,12 @@
+{
+	"bounds": {
+		"x": 560,
+		"y": 216,
+		"width": 800,
+		"height": 600
+	},
+	"isMaximized": false,
+	"settings": {
+		"afterBuild": "Do Nothing"
+	}
+}
